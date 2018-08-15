@@ -10,6 +10,7 @@ int main()
 {
 	printf("Hola Aldair\n");
 	printf("Este es el primer programa del curso\n");
+        
 }
 /*Termine de escribir el programa*/
 
