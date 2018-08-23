@@ -25,7 +25,7 @@ int main()
           printf("La temperatura en K es %f\n", k);
           f=((9/5)*c)+32;
           printf("La temperatura en °F es %f\n", f);
-          e=(f-32)/(1.8);
+          e=(f-32)/1.8;
           printf("La temperatura en °C es %f\n", e);
     return 0;
 
@@ -35,10 +35,12 @@ int main()
           printf("Entre en la opción 2");
           printf("Introduzca las coordenadas cartesianas x,y y z");
           scanf("%f %f %f", &x, &y, &z);
-          a=pow((pow(x,2)+pow(y,2)+pow(z,2)),(1-(1/2)));
+          a=sqtr((pow(x,2)+pow(y,2)+pow(z,2)),(1-(1/2));
+          printf("El valor de ρ es %f \n", a);
           b=atan(y/x);
+          printf("El valor de θ es %f \n", b);
           g=acos(z/a);
-          printf("Las coordenadas polares (ρ,θ,ϕ) son %f \n %f \n %f \n", a, b, g);
+          printf("El valor de ϕ es %f \n", g);
           return 0;
           break;
  
