@@ -40,7 +40,18 @@ int main()
           b=atan(y/x);
           printf("El valor de θ es %f \n", b);
           g=acos(z/a);
-          printf("El valor de ϕ es %f \n", g);
+          if(x>=0 && y>=0 && z>=0){
+          printf("El valor de θ es %f \n", b);
+          }if(x<=0 && y>=0 && z>=0){
+          b=b+180;
+          printf("El valor de θ es %f \n", b);
+          }if(x<=0 && y<=0 && z>=0){
+          b=b+180;
+          printf("El valor de θ es %f \n", b);
+          }else{
+          printf("El valor de θ es %f \n", b);
+          b=b+360;
+          }printf("El valor de ϕ es %f \n", g);
           return 0;
           break;
  
