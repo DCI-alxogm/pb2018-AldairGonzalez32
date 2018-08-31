@@ -1,4 +1,5 @@
-/*Creado por Aldair Gonzalez el 29 de agosto de 2018*/
+/*Creado por Aldair Gonzalez el 29 de agosto de 2018
+Este programa es una mejora a la combinacion de los programas de opciones, donde podias escoger si convertir temperaturas o coordenadas cartesianas, la mejora mostrada es que se puede salir del programa cuando el usuario diga y no despues de un uso, como lo hacia el anterior*/
 
 #include<stdio.h>
 #include<math.h>
@@ -10,13 +11,12 @@ int main()
     float x, y, z, a, b, g, p;
 
     printf("Teclear una opcion \n");
-    printf("(1) para convertir temperaturas");
-    printf("(2) para convertir coordenadas");
+    printf("(1) para convertir temperaturas \n");
+    printf("(2) para convertir coordenadas \n");
+    printf("Cualquier otra tecla para salir del programa \n");
  
     scanf("%i", &opcion);
-    while(opcion < 1 && opcion > 2){
-    printf("opción invalida, escoge la opción uno o dos");
-    scanf("%i", &opcion);}
+    while(opcion==1 || opcion==2){
     
     switch(opcion)
 {
@@ -29,7 +29,6 @@ case 1:
           f=((1.8)*c)+32;
           printf("La temperatura en °F es %f\n", f);
           printf("La temperatura en °C es %f\n", c);
-    return 0;
 
 break;
 
@@ -54,11 +53,13 @@ case 2:
           printf("El valor de θ es %f \n", b);
           b=b+360;
           }printf("El valor de ϕ es %f \n", g);
-          return 0;
           break;
  
-    default:
-          printf("Opción invalida");
-          break;
 }
+          printf("Presiona 1 para seleccionar el convertidos de temperaturas \n");
+          printf("Presiona 2 para seleccionar el convertidor de coordenadas \n");
+          printf("Presiona cualquier otra tecla para salir del programa \n");
+          scanf("%i", &opcion);
+}
+          return 0;
 }
