@@ -6,19 +6,28 @@ Es el primer ejemplo de uso de for, combinado con la función while */
 int main()
 {
     float temp_C, temp_K;
-    float Temp_C=100, final=200, delta;
-    int n=10, i, x;
-    printf("Introduce una temperatura en grados Celsius y un número de temperaturas a convertir");
-    scanf("%f", Temp_C);
-    scanf("%i", x);
+    float Temp_C, final, delta;
+    int n, i, o;
   
-    delta= (final-Temp_C)/n;
-     while(i!=x){
-         for(i=0; i<x; i++){
-              temp_K=temp_C+273.15;
-              printf("%f %f\n", temp_C, temp_K);
-              temp_C=temp_C+delta;    //   temp_C+=delta;
+    printf("Presione 1 para convertir un rango de temperaturas en grados Celsius a Kelvin");
+    scanf("%i", &o);
+  while(o==1){
+        printf("Introduzca una temperatura inicial para comenzar las conversiones");
+        scanf("%f", &Temp_C);
+        printf("Introdduzca una temperatura final para terminar las conversiones");
+        scanf("%f", &final);
+        printf("Introduzca un intervalo de pasos");
+        scanf("%i", &n);
+    delta=(final-Temp_C)/n;
+        temp_C=Temp_C;
+   for(i=0; i<n; i++){
+       temp_K=temp_C+273.15;
+       printf("%f %f\n", temp_C, temp_K);
+       temp_C=temp_C+delta;      //      temp_C+delta;
+       
    }
- }
+       printf("Presiona 1 para convertir un rango de temperaturas en grados Celsius a Kelvin/n");
+       scanf("%i", &o);
+}
 return 0;
 }
