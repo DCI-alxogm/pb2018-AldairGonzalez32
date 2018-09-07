@@ -5,4 +5,32 @@
 #include<stdio.h>
 #include<math.h>
 
+ int main()
+{
+     float x, f, n, e;
+     printf("Introduzca un valor inicial para el intervalo a evaluar");
+     scanf("%f", &x);
+     printf("introduzca un final al intervalo a evaluar");
+     scanf("%f", &n);
+     printf("Introduzca un espaciado para evaluar el intervalo");
+     scanf("%f", &e);
+     
+     for(x=f; x<n; x+=e){ 
+         f=exp(x);
+         printf("Exponencial: %f", f);
+         f=log(x);
+         printf("Logaritmica: %f", f);
+         f=sin(x);
+         printf("Seno: %f", f);
+         f=cos(x);
+         printf("Coseno: %f", f);
+         f=sqrt(x);
+         printf("Raiz cuadrada %f", f);
+}
+     return 0;
+}
+
+
+     
+
 
