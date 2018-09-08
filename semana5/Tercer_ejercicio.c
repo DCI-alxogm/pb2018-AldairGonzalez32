@@ -4,23 +4,20 @@
 #include<stdio.h>
  
     int main(){
-   
-    int i, f, t, y, a;
-
-    printf("Introduce el inicio del intervalo");
-    scanf("%i", &i);
-    printf("Introduce el final del intervalo");
+     
+    int d,c,f,i,a;
+    printf("Introduzca el valor inicial del intervalo a evaluar");
+    scanf("%i", &c);
+    printf("Introduzca el valor final del intervalo a evaluar");
     scanf("%i", &f);
     a=0;
-    
-    for(t=i; t>f; t++){
-          for(y=1;y<=i;y++){  //Aqui verificamos si un número es primo o no.          
-            if(i%y==0){
+    for(d=c;d<=f;d++){
+       for(i=1;i<=f;i++){
+          if(c%i==0){
             a++;
-            }}
-            }
-            if(a==2){
+            } 
+          if(a==2){
             printf("%i", i);
-   } printf("%i", i);
-return 0;
-}
+          }else{
+               printf(" ");
+          }}}}
