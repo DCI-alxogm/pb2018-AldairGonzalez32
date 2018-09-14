@@ -1,0 +1,9 @@
+Los valores escogidos para el intervalo fueron 1.000000, y 10.000000 
+Para el número 0.000000 : 
+Exponencial: 1.000000 Logaritmica: -inf Seno: 0.000000 Coseno: 1.000000 Raiz cuadrada 0.000000 
+Para el número 3.000000 : 
+Exponencial: 20.085537 Logaritmica: 1.098612 Seno: 0.141120 Coseno: -0.989992 Raiz cuadrada 1.732051 
+Para el número 6.000000 : 
+Exponencial: 403.428802 Logaritmica: 1.791759 Seno: -0.279415 Coseno: 0.960170 Raiz cuadrada 2.449490 
+Para el número 9.000000 : 
+Exponencial: 8103.083984 Logaritmica: 2.197225 Seno: 0.412118 Coseno: -0.911130 Raiz cuadrada 3.000000 

@@ -1,0 +1,4 @@
+Hay 10 alumnos, 4 mujeres y 6 hombres 
+Los alumnos tienen un promedio de edad de 18  
+De los estudiantes dados, 7 son de primer semestre, 0 de segundo y 3 de tercero
+El promedio de calificaciones de los estudiantes es 8 
