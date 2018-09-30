@@ -1,2 +1,2 @@
-0.002747252  1
+0.00273971 15
 H, dado en años Tiempo de la orbita, en años tambien, en este caso h es un día y tf es un año.
