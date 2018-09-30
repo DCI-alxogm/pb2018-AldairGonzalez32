@@ -13,7 +13,6 @@ int main(){
     FILE*Var;
     FILE*Res;       //Aqui se hacen las variables de los ficheros necesarios para el programa
     
-    printf("Escoge el planeta para el cual se hara la simulacion de orbita. \n(1) Mercurio \n(2) Venus \n(3) Tierra \n(4) Marte \n(5) Jupiter \n(6) Saturno \n(7) Urano \n(8) Neptuno \n(9) Pluton. ");
     Var=fopen("Datos.txt", "r");
     fscanf(Var, "%lf %f", &h, &tf);       //Aquí se toman los valores de intervalo y tiempo final de la orbita.
     printf("El intervalo entre cada evaluación es %f y el final de la evaluación es %f\n", h, tf); //imprimo el valor de h y tf para asegurarme de que funcionan.
