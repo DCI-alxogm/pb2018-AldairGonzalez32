@@ -86,7 +86,8 @@ int main(){
     vxo*=365.242;
     vyo*=365.242;
     vzo*=365.242;
-
+    
+    fprintf(Res,"xo         yo       zo        vxo        vyo        vzo\n");
     for(i=0; i<tf; i+=h){   //Aqui se hacen los calculos para la trayectoria de los planetas, usando una función ciclica que nos da los cambios con un intervalo h, escribiendo los resultados en distintos archivos para cada planeta evaluado.
     
     xo=xo+vxo*h;
