@@ -4,7 +4,7 @@ Es el primer ejercicio del uso de apuntadores.*/
 #include<stdio.h>
 
 int main() {
-    int var = 20 ;  //Declaración de la variable.
+    int var = 20;  //Declaración de la variable.
     int *ip;        //Declaración de la variable apuntador.
     ip = &var;      //Asigna la dirección de la variable var al apuntador *ip.
 
