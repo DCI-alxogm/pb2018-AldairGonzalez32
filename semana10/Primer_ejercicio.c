@@ -3,9 +3,27 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main( char *let[], int n, d){
+int main(int n, char *let[], float d){
 
         char *nombre_archivo;
-        int n, i;
+        int i;
+        float x[n], y[n], z[n];
+        FILE *arc;
+
         nombre_archivo=let[1];
-        n=i;
+        arc=fopen(nombre_archivo, "w+");
+        printf("Introduzca el inicio para cada coordanada x, y, y z");
+        scanf("%f %f %f", &x[1], &y[1], &z[1]);
+        
+        fprintf(arc, "x     y      z\n  %f          %f         %f\n", x[1], y[1], z[1]);
+        for(i=0;i<=n;i++){
+           x[i]=x[i]+d;
+           x[i]=x[i]+d;
+           x[i]=x[i]+d;
+           fprintf(arc, "%f        %f        %f\n", x[i], y[i], z[i]); 
+        }
+return 0;
+}
+            
+        
+
